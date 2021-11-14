@@ -127,7 +127,7 @@ async def media(c, m):
         try:
             await m.reply_document(
                 document=new_file_location,
-                caption=caption,
+                caption="<b>" + caption + "</b>",
                 thumb=thumbnail,
                 progress=progress_bar,
                 progress_args=("Uploading:", start_time, send_message)
@@ -145,7 +145,7 @@ async def media(c, m):
                 duration=duration,
                 width=width,
                 height=height,
-                caption=caption,
+                caption="<b>" + caption + "</b>",
                 thumb=thumbnail,
                 progress=progress_bar,
                 progress_args=("Uploading:", start_time, send_message)
